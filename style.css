@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:500,600');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
 /* Fonts:
     1:  font-family: 'Work Sans', sans-serif;
         Imported: 500, 600
     2:  font-family: 'Montserrat', sans-serif;
-        Imported: 500
+        Imported: 300, 400
 */
 
 html {
@@ -28,7 +28,7 @@ body {
 }
 
 
-/* ====== HEADER ===== */
+/* ====== HEADER ====== */
 
 header {
     /* background-color: #55d6aa; */
@@ -71,10 +71,12 @@ header {
 }
 
 
-/* ===== NAVIGATION ===== */
+/* ====== NAVIGATION ====== */
 
 nav {
     justify-content: flex-end;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
 }
 
 
@@ -161,7 +163,7 @@ nav a:hover::before {
 }
 
 
-/* ===== MAIN : BLOCKS & SECTIONS ===== */
+/* ====== MAIN : BLOCKS & SECTIONS ====== */
 
 main {
     max-width: 100%;
@@ -179,7 +181,7 @@ main h1 {
 
 
 
-/* ===== SECTIONS ===== */
+/* ====== SECTIONS ====== */
 
 /* --- Section 1 : .card-flex --- */
 section.card-flex{
@@ -328,27 +330,7 @@ section.card-flex{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* --- Under COnstrustion --- */
 
 .under-const {
     text-align: center;
@@ -362,7 +344,9 @@ section.card-flex{
 }
 
 
-/* ===== FOOTER ===== */
+
+/* ====== FOOTER ====== */
+
 footer {
     position: absolute;
     bottom: 1px;
@@ -376,15 +360,46 @@ footer {
 
 
 
+
+/* =================================== */
+
+/* ====== SPECIFIC STYLING ====== */
+
 /* ====== ABOUT STYLING ===== */
 
-.about-info, .pricing-info, .contact-info {
+main#about {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
+
+section h2 {
+    margin-top: 10vh;
+}
+
+section > p {
+    word-spacing: 5px;
+    letter-spacing: .8px;
+}
+
+section.history b {
+    font-weight: 400;
+    word-spacing: 3px;
+}
+
+/* .about-info, .pricing-info, .contact-info {
     text-align: center;
     margin: 100px;
     color: #222;
     margin-bottom: 30vh;
 
-}
+} */
+
+
+
+
+
+
 
 
 
