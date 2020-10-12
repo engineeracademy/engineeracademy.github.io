@@ -6,14 +6,18 @@ html {
     min-height: 100%; 
 }
 
+*:focus {
+    outline: none;
+}
+
 body {
     margin: 0;
     padding: 0;
-    /* background: rgb(237, 237, 237); */
     background: rgb(245, 245, 245);
     font-weight: 600;
     font-family: 'Work Sans', sans-serif;
 }
+
 
 /* ====== HEADER ===== */
 header {
@@ -23,7 +27,7 @@ header {
     box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
 }
 
-.container {
+.header-container {
     width: 90%;
     margin: 0 7% 0 3%;
     display: flex;
@@ -33,7 +37,7 @@ header {
     flex-wrap: wrap;
 }
 
-.container img {
+.header-container img {
     width: 300px;
     height: 80px;
     color: #444;
@@ -45,8 +49,9 @@ header {
     -moz-transition: .6s;
     transition: 250ms;
 }
-.container img:hover,
-.container img:focus {
+
+.header-container img:hover,
+.header-container img:focus {
     filter: grayscale(90%);
     
     opacity: .9;
