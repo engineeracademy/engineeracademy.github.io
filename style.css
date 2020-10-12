@@ -373,11 +373,11 @@ main#about {
     text-align: center;
 }
 
-section h2 {
+section.history h2 {
     margin-top: 10vh;
 }
 
-section > p {
+section.history > p {
     word-spacing: 5px;
     letter-spacing: .8px;
 }
@@ -385,6 +385,12 @@ section > p {
 section.history b {
     font-weight: 400;
     word-spacing: 3px;
+}
+@media only screen and (max-width: 550px) {
+    section.history > p {
+        word-spacing: 2px;
+        letter-spacing: .5px;
+    }
 }
 
 /* .about-info, .pricing-info, .contact-info {
