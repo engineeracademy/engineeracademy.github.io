@@ -371,6 +371,7 @@ main#about {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     text-align: center;
+    margin: 0 1vw;
 }
 
 section.aboutS h2 {
@@ -392,15 +393,6 @@ section.aboutS b {
         letter-spacing: .5px;
     }
 }
-
-/* .about-info, .pricing-info, .contact-info {
-    text-align: center;
-    margin: 100px;
-    color: #222;
-    margin-bottom: 30vh;
-
-} */
-
 
 
 
