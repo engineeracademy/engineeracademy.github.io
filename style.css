@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:500,600');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+/* Fonts:
+    1:  font-family: 'Work Sans', sans-serif;
+        Imported: 500, 600
+    2:  font-family: 'Montserrat', sans-serif;
+        Imported: 500
+*/
 
 html {
     position: relative;
@@ -287,7 +293,7 @@ section.card-flex{
     margin: 5vh auto;
 }
 
-.info .grid-cont {
+.more-info .grid-cont {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto auto;
@@ -340,13 +346,16 @@ section.card-flex{
 
 
 
-.under {
+
+
+
+.under-const {
     text-align: center;
     padding-bottom: 15vh;
     padding-top: 5vh;
 
 }
-.under img{
+.under-const img{
     max-width: 80vw;
     height: 130px;
 }
