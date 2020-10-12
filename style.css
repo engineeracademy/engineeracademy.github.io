@@ -90,7 +90,7 @@ li a {
     font-size: 0.86rem;
 }
 
-@media only screen and (max-width: 439px) {
+@media only screen and (max-width: 445px) {
     nav li {
         margin-left: 70px;
     }
@@ -98,7 +98,7 @@ li a {
         margin-left: 90px;
     }
 }
-@media only screen and (max-width: 361px) {
+@media only screen and (max-width: 365px) {
     nav li {
         margin-left: 50px;
     }
