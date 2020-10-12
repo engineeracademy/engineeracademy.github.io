@@ -373,21 +373,21 @@ main#about {
     text-align: center;
 }
 
-section.history h2 {
-    margin-top: 10vh;
+section.aboutS h2 {
+    margin-top: 12vh;
 }
 
-section.history > p {
+section.aboutS > p {
     word-spacing: 5px;
     letter-spacing: .8px;
 }
 
-section.history b {
+section.aboutS b {
     font-weight: 400;
     word-spacing: 3px;
 }
 @media only screen and (max-width: 550px) {
-    section.history > p {
+    section.aboutS > p {
         word-spacing: 2px;
         letter-spacing: .5px;
     }
