@@ -254,6 +254,7 @@ h1 {
 
 .h2-h3 {
     text-align: center;
+    width: 95%;
     margin: 100px auto;
     font-size: 1.3rem;
     font-weight: bold;
@@ -277,10 +278,11 @@ h1 {
 
 .info .grid-cont {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto auto;
     list-style: none;
     grid-gap: 4px;
+    padding: 0;
 }
 .grid-cont li {
     background-color: rgb(144, 238, 160);
