@@ -137,8 +137,13 @@ nav li a {
 /* --- NAVIGATION ANIMATIONS --- */
 
 nav a:hover,
-nav a:focus {
+nav a:focus,
+{
     color: #000;
+}
+
+nav a.active {
+    font-size: 0.95em;
 }
 
 nav a::before {
@@ -159,8 +164,9 @@ nav a::before {
 nav a:hover::before {
     width: 100%;
     margin-top: 4px;
-
+    
 }
+
 
 
 /* ====== MAIN : BLOCKS & SECTIONS ====== */
@@ -170,7 +176,7 @@ main {
     
 }
 
-main h1 {
+main#index h1 {
     text-align: center;
     font-size: 2em;
     /* font-size: 4vw; */
@@ -394,7 +400,27 @@ section.aboutS b {
     }
 }
 
+/* ====== PRICING STYLING ===== */
 
+main#contact {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    margin: 0 1vw;
+}
+
+section.contact-info {
+    margin: 12vh 0;
+    letter-spacing: 0.5px;
+}
+
+section.contact-number {
+    word-spacing: 6px;
+    margin: 5vh 0;
+}
+
+
+/* ====== CONTACT STYLING ===== */
 
 
 
