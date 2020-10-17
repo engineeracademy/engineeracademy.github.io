@@ -73,25 +73,27 @@ header {
 
 /* ====== NAVIGATION ====== */
 
- nav {
+nav {
     justify-content: flex-end;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    margin-left: auto;
 }
 
- 
+
 nav > ul {
     list-style: none;
     margin: 0;
-    padding: 10px;
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    grid-template-rows: repeat(1, auto);
-    grid-gap: 50px;
+    padding: 0;
 }
+
 nav li {
-    grid-row-end: auto;
+    display: inline-block;
+    margin-left: 50px;
+    margin-right: 30px;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    
+    position: relative;
 }
 
 nav li a {
@@ -101,10 +103,9 @@ nav li a {
     font-size: 0.85rem;
 }
 
-
 /* --- NAVIGATION RESPONSIVENESS --- */
 
-/* @media only screen and (max-width: 937px) {
+@media only screen and (max-width: 937px) {
     nav { 
             margin-left: auto;
             margin-top: 1.2vh;
@@ -131,7 +132,7 @@ nav li a {
     nav li a {
         font-size: 0.8rem;
     }
-} */
+}
 
 /* --- NAVIGATION ANIMATIONS --- */
 
@@ -245,9 +246,9 @@ section.card-flex{
 /* --- .card-flex item Responsiveness --- */
 
 @media only screen and (max-width: 820px) {
-    /* .item2 {
+    .item2 {
         border: none;
-    } */
+    }
     .item3 {
         flex: 1 1 60vw;
         padding-top: 5vh;
@@ -488,3 +489,19 @@ width: 10px;
     background: rgb(20, 94, 107, 0.6); 
 }
 
+
+/* FONTS & COLORS USED */
+
+font-family: 'Work Sans', sans-serif;
+
+
+#444
+#777
+#55d6aa
+rgb(71, 168, 175)
+#d65580b0
+#182824
+rgb(238, 219, 183)
+#182628
+#784E48
+#281A18
