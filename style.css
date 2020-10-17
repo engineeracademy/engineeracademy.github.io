@@ -38,16 +38,21 @@ header {
 }
 
 .header-container {
-    width: 90%;
-    margin: 0 7% 0 3%;
+    width: 94%;
+    margin: 0 3% 0 3%;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    /* align-items: center; */
+    /* justify-content: space-between; */
     flex-wrap: wrap;
 }
 
-.header-container img {
+.header-container > a {
+    text-decoration: none;
+    height: 80px;
+}
+
+.header-container a img {
     width: 300px;
     height: 80px;
     color: #444;
@@ -74,7 +79,7 @@ header {
 /* ====== NAVIGATION ====== */
 
  nav {
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     margin-left: auto;
@@ -84,14 +89,20 @@ header {
 nav > ul {
     list-style: none;
     margin: 0;
-    padding: 10px;
+    padding: 8px;
+
     display: grid;
     grid-template-columns: repeat(4, auto);
-    grid-template-rows: repeat(1, auto);
-    grid-gap: 50px;
+    grid-template-rows: repeat(auto, auto);
+    grid-gap: 80px;
 }
+
 nav li {
+    padding-top: 25px;
+    padding-bottom: 20px;
+    padding: 25px 2px 20px 2px;
     grid-row-end: auto;
+    position: relative;
 }
 
 nav li a {
@@ -104,22 +115,32 @@ nav li a {
 
 /* --- NAVIGATION RESPONSIVENESS --- */
 
-/* @media only screen and (max-width: 937px) {
+@media only screen and (max-width: 720px) {
     nav { 
-            margin-left: auto;
-            margin-top: 1.2vh;
+            margin-right: auto;
+            /* margin-top: 1.2vh; */
         }
-}
-@media only screen and (max-width: 445px) {
-    nav li {
-        margin-left: 70px;
     }
-    nav li:nth-child(2) {
-        margin-left: 90px;
+    
+@media only screen and (max-width: 530px) {
+    nav > ul {
+        grid-gap: 60px;
+    }
+    
+    .header-container a {
+        margin: 0 auto;
     }
 }
-@media only screen and (max-width: 365px) {
-    nav li {
+
+@media only screen and (max-width: 465px) {
+    nav > ul {
+        grid-gap: 40px;
+    }
+    .header-container a img {
+        width: 270px;
+        height: 72px;
+    }
+/*    nav li {
         margin-left: 50px;
     }
     nav li:nth-child(2) {
@@ -130,8 +151,8 @@ nav li a {
     }
     nav li a {
         font-size: 0.8rem;
-    }
-} */
+    }*/
+} 
 
 /* --- NAVIGATION ANIMATIONS --- */
 
