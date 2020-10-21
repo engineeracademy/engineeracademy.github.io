@@ -1,5 +1,6 @@
 main#pricing {
     font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
 }
 
 .pricing-table {
@@ -11,7 +12,7 @@ main#pricing {
 .pricing-table ul {
     list-style: none;
     background: rgba(221, 221, 221, 0.5);
-    padding: 3vw;
+    padding: 5vw;
     margin: 3vw;
     text-align: center;
     /* width: 30vw; */
@@ -20,6 +21,10 @@ main#pricing {
 .pricing-table ul li {
     padding: 1em;
     border-bottom: 1px solid #999;
+}
+
+.pricing-table .column li:first-child {
+    font-weight: bolder;
 }
 
 @media only screen and (max-width: 500px) {
