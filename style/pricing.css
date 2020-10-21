@@ -1,0 +1,28 @@
+main#pricing {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.pricing-table {
+    display: grid;
+    grid-template-columns: repeat(2, 3fr);
+    margin: 10vw 5vw;
+}
+
+.pricing-table ul {
+    list-style: none;
+    background: rgba(221, 221, 221, 0.5);
+    padding: 3vw;
+    margin: 3vw;
+    text-align: center;
+    /* width: 30vw; */
+}
+
+.pricing-table ul li {
+    padding: 1em;
+    border-bottom: 1px solid #999;
+}
+
+@media only screen and (max-width: 500px) {
+    .pricing-table {
+        grid-template-columns: repeat(1, 2fr);
+    }
