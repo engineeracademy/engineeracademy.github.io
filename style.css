@@ -71,7 +71,7 @@ header {
     
     opacity: .9;
     /* margin-top: -3px; */
-    box-shadow: 0px 25px 22px -30px rgba(0,0,0,0.3);
+    box-shadow: 0px 32px 22px -30px rgba(0,0,0,0.3);
 
 }
 
@@ -154,8 +154,13 @@ nav li a {
     }*/
 } 
 @media only screen and (max-width: 400px) {
+    .header-container{
+        width: 100%;
+        margin: 0;
+    }
     nav > ul {
         grid-gap: 30px;
+        padding: 2px;
     }
     nav li a {
         font-size: 0.75em
@@ -209,9 +214,9 @@ main {
 
 main#index h1 {
     text-align: center;
-    font-size: 2em;
+    font-size: 1.9em;
     /* font-size: 4vw; */
-    padding: 1.5em .2em;
+    padding: 1.4em .2em;
     margin: 2em .2em;
     color: #444;
 }
@@ -247,6 +252,7 @@ section.card-flex{
     border-right: 2px solid black;
 }
 .item1 p:nth-child(2) {
+    font-family: 'Montserrat', sans-serif;
     font-size: 0.8em;
     font-weight: 500;
 }
@@ -258,6 +264,7 @@ section.card-flex{
     border-right: 2px solid black;
 }
 .item2 p:nth-child(2), .item2 p:nth-child(3) {
+    font-family: 'Montserrat', sans-serif;
     font-size: 0.8em;
     font-weight: 500;
 }
@@ -268,6 +275,7 @@ section.card-flex{
     border: none;
 }
 .item3 p:nth-child(2), .item3 p:nth-child(3) {
+    font-family: 'Montserrat', sans-serif;
     font-size: 0.75em;
     font-weight: 500;
     padding: 0 1.2vw;
@@ -322,7 +330,8 @@ section.card-flex{
     text-transform: uppercase;
 }
 .highlights h3 {
-    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
 }
 
 
@@ -392,7 +401,6 @@ footer {
     text-align: center;
     background-color: #55d6aa;
     color: #444;
-
 }
 
 
