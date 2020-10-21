@@ -133,6 +133,10 @@ nav li a {
 }
 
 @media only screen and (max-width: 465px) {
+    .header-container{
+        width: 100%;
+        margin: 0;
+    }
     nav > ul {
         grid-gap: 40px;
     }
@@ -154,10 +158,6 @@ nav li a {
     }*/
 } 
 @media only screen and (max-width: 400px) {
-    .header-container{
-        width: 100%;
-        margin: 0;
-    }
     nav > ul {
         grid-gap: 30px;
         padding: 2px;
