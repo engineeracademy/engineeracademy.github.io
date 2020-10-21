@@ -25,6 +25,9 @@ main#pricing {
 
 .pricing-table .column li:first-child {
     font-weight: bolder;
+    background: #333;
+    color: white;
+    letter-spacing: 0.2em;
 }
 
 @media only screen and (max-width: 500px) {
