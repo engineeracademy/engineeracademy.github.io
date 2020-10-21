@@ -26,3 +26,4 @@ main#pricing {
     .pricing-table {
         grid-template-columns: repeat(1, 2fr);
     }
+}

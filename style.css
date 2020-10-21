@@ -173,8 +173,7 @@ nav li a {
 /* --- NAVIGATION ANIMATIONS --- */
 
 nav a:hover,
-nav a:focus,
-{
+nav a:focus {
     color: #000;
 }
 
