@@ -6,7 +6,7 @@ main#pricing {
 .pricing-table {
     display: grid;
     grid-template-columns: repeat(2, 3fr);
-    margin: 2vw 2vw;
+    margin: 3vh 2vw;
 }
 
 .pricing-table ul {
@@ -46,8 +46,16 @@ main#pricing {
 
 .pricing-table .column li:last-child {
     background: #ddd;
-
 }
+
+.pricing-table .column li a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    background: #333;
+    padding: 1em;
+}
+
 
 @media only screen and (max-width: 500px) {
     .pricing-table {

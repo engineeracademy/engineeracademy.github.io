@@ -487,21 +487,13 @@ section.contact-number {
 }
 
 
-
-::-o-scrollbar {
-width: 10px;
-}
-::-moz-scrollbar-track {
-    background: #f1f1f1; 
-}
-::-moz-scrollbar-thumb {
-    background: #72b39c; 
-}
-::-moz-scrollbar-thumb:hover {
-    background: rgb(20, 94, 107, 0.6); 
+* { /* FOR MOZILLA */
+    scrollbar-color:  #72b39c rgba(20, 94, 107, 0);
+    scrollbar-width: thin;
 }
 
-::-o-scrollbar {
+
+/* ::-o-scrollbar {
 width: 10px;
 }
 ::-o-scrollbar-track {
@@ -526,4 +518,4 @@ width: 10px;
 ::-ms-scrollbar-thumb:hover {
     background: rgb(20, 94, 107, 0.6); 
 }
-
+ */
