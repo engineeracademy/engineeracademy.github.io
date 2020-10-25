@@ -12,8 +12,8 @@ main#pricing {
 .pricing-table ul {
     list-style: none;
     background: rgba(240, 240, 240, 0.5);
-    padding: 3vw;
-    margin: 1.2vw 3vw;
+    padding: 1.5em;
+    margin: 1.3vh 3vw;
     text-align: center;
     /* width: 30vw; */
     transition: all ease-in-out 250ms;
@@ -60,5 +60,6 @@ main#pricing {
 @media only screen and (max-width: 500px) {
     .pricing-table {
         grid-template-columns: repeat(1, 2fr);
+        margin: 5vh 2vw
     }
 }
