@@ -13,11 +13,19 @@ html {
 }
 
 :focus {
+    /* outline: 3px solid #555;
+    outline-offset: 4px; */
     outline: none;
+    /* box-shadow: 0 0 0 5px, 0 0 0 10px #555; */
 }
-* {
-    outline: none;
+::-moz-focus-inner {
+    border: 0;
 }
+
+:active {
+    box-shadow: none;
+}
+
 
 body {
     margin: 0;
@@ -57,21 +65,17 @@ header {
     height: 80px;
     color: #444;
 
-    filter: grayscale(0%);
-    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
     opacity: .7;
-    -webkit-transition: .6s;
-    -moz-transition: .6s;
     transition: 250ms;
 }
 
-.header-container img:hover,
-.header-container img:focus {
+.header-container img:hover, .header-container > a:focus img{
     filter: grayscale(90%);
     
-    opacity: .9;
+    opacity: 1;
     /* margin-top: -3px; */
-    box-shadow: 0px 32px 22px -30px rgba(0,0,0,0.3);
+    box-shadow: 0px 32px 22px -25px rgba(0,0,0,0.3);
 
 }
 
@@ -109,6 +113,10 @@ nav li#active {
     /* font-size: 0.95em; */
     transform: scale(1.25) translateY(5px);
 }
+
+/* nav li#active a:focus {
+    box-shadow: 0 0 1px 4px #90e0c4, 0 0 2px 8px #555;
+} */
 
 nav li a {
     text-decoration: none;
@@ -177,12 +185,11 @@ nav li a {
 }
 /* --- NAVIGATION ANIMATIONS --- */
 
-nav li:hover,
-nav li:focus {
+nav li a:hover, nav li a:focus {
     color: #000;
 }
 
-nav li::before {
+nav li a::before {
     content: '';
     display: block;
     height: 4px;
@@ -197,15 +204,15 @@ nav li::before {
     transition: all ease-in-out 160ms;
 }
 
-nav li:hover::before {
+nav li a:hover::before, nav li a:focus::before {
     width: 100%;
     margin-top: 5px;    
 }
 
-nav li#active::before {
+nav li#active a::before {
     margin-top: 14px;
 }
-nav li#active:hover::before {
+nav li#active a:hover::before, nav li#active a:focus::before {
     width: 90%;
     height: 3.3px;
     margin-top: 9px;
@@ -457,7 +464,8 @@ section.aboutS b {
     }
 }
 
-/* ====== PRICING STYLING ===== */
+
+/* ====== CONTACT STYLING ===== */
 
 main#contact {
     font-family: 'Montserrat', sans-serif;
@@ -477,7 +485,6 @@ section.contact-number {
 }
 
 
-/* ====== CONTACT STYLING ===== */
 
 
 
