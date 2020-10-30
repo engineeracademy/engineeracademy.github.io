@@ -1,0 +1,26 @@
+main#about {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    margin: 0 1vw;
+}
+
+section.aboutS h2 {
+    margin-top: 12vh;
+}
+
+section.aboutS > p {
+    word-spacing: 5px;
+    letter-spacing: .8px;
+}
+
+section.aboutS b {
+    font-weight: 400;
+    word-spacing: 3px;
+}
+@media only screen and (max-width: 550px) {
+    section.aboutS > p {
+        word-spacing: 2px;
+        letter-spacing: .5px;
+    }
+}

@@ -185,7 +185,7 @@ nav li a {
 }
 /* --- NAVIGATION ANIMATIONS --- */
 
-nav li a:hover, nav li a:focus {
+nav li a:hover, nav li a:focus, nav li#active a {
     color: #000;
 }
 
@@ -429,66 +429,11 @@ footer {
 }
 
 
-
-
 /* =================================== */
 
+
+
 /* ====== SPECIFIC STYLING ====== */
-
-/* ====== ABOUT STYLING ===== */
-
-main#about {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    text-align: center;
-    margin: 0 1vw;
-}
-
-section.aboutS h2 {
-    margin-top: 12vh;
-}
-
-section.aboutS > p {
-    word-spacing: 5px;
-    letter-spacing: .8px;
-}
-
-section.aboutS b {
-    font-weight: 400;
-    word-spacing: 3px;
-}
-@media only screen and (max-width: 550px) {
-    section.aboutS > p {
-        word-spacing: 2px;
-        letter-spacing: .5px;
-    }
-}
-
-
-/* ====== CONTACT STYLING ===== */
-
-main#contact {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    text-align: center;
-    margin: 0 1vw;
-}
-
-section.contact-info {
-    margin: 12vh 0;
-    letter-spacing: 0.5px;
-}
-
-section.contact-number {
-    word-spacing: 6px;
-    margin: 5vh 0;
-}
-
-
-
-
-
-
 
 
 /* -------- SPECIFIC STYLING: SCROLLBAR -------- */

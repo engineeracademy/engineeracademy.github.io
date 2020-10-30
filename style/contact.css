@@ -1,0 +1,16 @@
+main#contact {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    margin: 0 1vw;
+}
+
+section.contact-info {
+    margin: 12vh 0;
+    letter-spacing: 0.5px;
+}
+
+section.contact-number {
+    word-spacing: 6px;
+    margin: 5vh 0;
+}
