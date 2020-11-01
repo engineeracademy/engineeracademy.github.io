@@ -14,3 +14,32 @@ section.contact-number {
     word-spacing: 6px;
     margin: 5vh 0;
 }
+
+.contact-number a {
+    text-decoration: none;
+    color: black;
+}
+
+.contact-number p {
+    word-spacing: 0;
+    font-size: .9em;
+}
+
+
+/* --- Contact numbers Display: normal-ver show on screen >768px & mobile-ver on smaller*/
+.contact-number div.mobile-ver {
+    display: none;
+}
+
+@media only screen and (max-width: 769px) {
+    .contact-number div.normal-ver {
+        display: none;
+    }
+    .contact-number div.mobile-ver {
+        display: block;
+    }
+}
+
+footer div span {
+    padding: 0 1em;
+}
