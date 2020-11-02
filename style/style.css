@@ -428,3 +428,32 @@ footer {
 
 
 /* =================================== */
+
+/* ====== SCROLLBAR ====== */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #72b39c; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(20, 94, 107, 0.6); 
+}
+
+
+/* --- FOR MOZILLA FIREFOX --- */
+* {
+    scrollbar-color:  #72b39c rgba(20, 94, 107, 0);
+    scrollbar-width: thin;
+}
