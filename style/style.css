@@ -220,16 +220,22 @@ nav li#active a:hover::before, nav li#active a:focus::before {
 
 main {
     max-width: 100%;
-    
+    color: #444;
 }
 
-main#index h1 {
+main#index > h1 {
     text-align: center;
     font-size: 1.9em;
     /* font-size: 4vw; */
     padding: 1.4em .2em;
     margin: 2em .2em;
-    color: #444;
+    color: #111;
+}
+
+main#index > h2 {
+    text-align: center;
+    color: #222;
+    text-transform: uppercase;
 }
 
 
@@ -245,6 +251,11 @@ section.card-flex{
     justify-content: space-evenly;
     flex-wrap: wrap;
 
+}
+
+section.card-flex a {
+    text-decoration: none;
+    color: #444;
 }
 
 .card-flex .item {

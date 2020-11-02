@@ -1,0 +1,38 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.header-container {
+    width: 90%;
+    justify-content: space-between;
+    vertical-align: middle;
+}
+
+
+ul.breadcrumbs {
+    /* background: #ddd; */
+    list-style: none;
+    padding: 10px 16px;
+    margin: auto 2em;
+}
+
+.breadcrumbs li {
+    display: inline;
+    margin: 0;
+}
+.breadcrumbs li+li::before {
+    content: "/\00a0";
+    padding: 20px;
+    color: #444;
+
+}
+
+.breadcrumbs li a {
+    text-decoration: none;
+    color: #444;
+}
+
+.breadcrumbs li:hover a {
+    color: black;
+}
