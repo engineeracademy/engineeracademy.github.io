@@ -246,9 +246,9 @@ main#index > h2 {
     }
     main#index > h2 {
         text-align: center;
-        background-color: #777;
+        background-color: #999;
         padding: 0.5em 2em;
-        margin-top: 1em;
+        margin-top: 1.5em;
     }
     main#index > h2::after {
         content: ' : '
