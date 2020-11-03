@@ -273,6 +273,10 @@ section.card-flex a {
     flex: 1 1.5 200px;
     border-right: 2px solid black;
 }
+/* .item1 p:first-child::before, .item1 p:first-child::after {
+    font-family: 'Segoe UI Symbol' !important;
+    content: "\279A"
+} */
 .item1 p:nth-child(2) {
     font-family: 'Montserrat', sans-serif;
     font-size: 0.8em;
