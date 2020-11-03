@@ -221,6 +221,7 @@ nav li#active a:hover::before, nav li#active a:focus::before {
 main {
     max-width: 100%;
     color: #444;
+    min-height: 100vh;
 }
 
 main#index > h1 {
@@ -234,8 +235,24 @@ main#index > h1 {
 
 main#index > h2 {
     text-align: center;
-    color: #222;
+    color: #333;
     text-transform: uppercase;
+}
+
+@media only screen and (max-width: 650px) {
+
+    main#index > h1 {
+        margin: 1em .2em;
+    }
+    main#index > h2 {
+        text-align: center;
+        background-color: #777;
+        padding: 0.5em 2em;
+        margin-top: 1em;
+    }
+    main#index > h2::after {
+        content: ' : '
+    }
 }
 
 
@@ -444,11 +461,40 @@ footer {
     left: 0;
     width: 100%;
     text-align: center;
-    background-color: #55d6aa;
+    background-color: #55d6ab2c;
     color: #444;
-    font-weight: 400;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+
+}
+footer a {
+    color: #444;
 }
 
+footer div.footer-1 {
+    display: flex;
+    margin: 1.5em;
+    /* justify-content: space-evenly; */
+}
+
+div.footer-1 a {
+    flex: 60px 1 1;
+    padding: 0.2em;
+}
+
+
+footer div.footer-2  {
+    margin: 0.5em;
+}
+
+div.footer-2 p {
+    display: inline;
+}
+div.footer-2 span {
+    padding: 0 1em;
+}
 
 /* =================================== */
 
