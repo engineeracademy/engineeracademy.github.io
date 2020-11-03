@@ -6,7 +6,7 @@ main#pricing {
 .pricing-table {
     display: grid;
     grid-template-columns: repeat(2, 3fr);
-    margin: 3vh 2vw;
+    margin: 3vh 2vw 20vh 2vh;
 }
 
 .pricing-table ul {
