@@ -14,7 +14,7 @@ ul.breadcrumbs {
     /* background: #ddd; */
     list-style: none;
     padding: 10px 16px;
-    margin: auto 2em;
+    margin: auto 0 auto 2em;
 }
 
 .breadcrumbs li {
@@ -35,4 +35,71 @@ ul.breadcrumbs {
 
 .breadcrumbs li:hover a {
     color: black;
+}
+
+/* --- MAIN --- */
+main#cat-pg-to-8 {
+    display: flex;
+    flex-direction: column;
+    margin: 3em auto;
+}
+
+.cat-flex-item {
+    margin: 0 2em;
+    padding: 0 2em;
+    flex: auto 1 1;
+}
+
+.cat-flex-item:nth-child(2) {
+    align-self: center;
+}
+
+
+.cat-flex-item:nth-child(3) {
+    align-self: flex-end;
+}
+
+
+@media only screen and (max-width: 610px) {
+    .header-container {
+        width: 99%;
+        margin: 0;
+    }
+
+    .header-container ul.breadcrumbs {
+        margin: auto auto;
+    }
+
+    .header-container a img {
+        width: 270px;
+        height: 72px;
+    }
+
+    .cat-flex-item, .cat-flex-item:nth-child(2), .cat-flex-item:nth-child(3) {
+        align-self: center;
+        margin: 0 0;
+        padding: 0 0.5em;
+    }
+
+
+@media only screen and (max-width: 510px) {
+    main * {
+        font-weight: 300;
+    }
+
+    main#cat-pg-to-8 {
+        margin: 1em 0;
+    }
+
+    .header-container {
+        width: 100%;
+    }
+
+    .header-container ul.breadcrumbs {
+        order: 2;
+        padding: 0 4em;
+        margin: 1.5em auto .5em auto;
+    }
+
+
 }
