@@ -3,6 +3,7 @@ main#contact {
     font-weight: 300;
     text-align: center;
     margin: 0 1vw;
+    color: #333;
 }
 
 section.contact-info {
@@ -17,7 +18,7 @@ section.contact-number {
 
 .contact-number a {
     text-decoration: none;
-    color: black;
+    color: #333;
 }
 
 .contact-number p {
