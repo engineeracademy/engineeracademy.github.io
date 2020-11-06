@@ -38,16 +38,21 @@ ul.breadcrumbs {
 }
 
 /* --- MAIN --- */
-main#cat-pg-to-8 {
+
+main#cat-page {
     display: flex;
     flex-direction: column;
-    margin: 3em 20px;
+    margin: 3em 4em;
 }
 
 .cat-flex-item {
     margin: 0 2em;
     padding: 10px 2em;
-    flex: auto 1 1;
+    flex: 1 1 50px;
+}
+
+.cat-flex-item h3 {
+    margin: none;
 }
 
 .cat-flex-item:nth-child(2) {
@@ -88,7 +93,7 @@ main#cat-pg-to-8 {
         font-weight: 300;
     }
 
-    main#cat-pg-to-8 {
+    main#cat-page {
         margin: 1em 0;
     }
 
