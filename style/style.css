@@ -237,6 +237,14 @@ main#index > h2 {
     text-align: center;
     color: #333;
     text-transform: uppercase;
+    position: relative;
+}
+main#index > h2::after {
+    content: '\*';
+    position: absolute;
+    top: -2px;
+    font-size: 13px;
+    padding-left: 2px;
 }
 
 @media only screen and (max-width: 650px) {
@@ -357,29 +365,6 @@ section.card-flex a {
 }
 
 
-/* --- Section 2 : .highlights --- */
-
-.highlights {
-    text-align: center;
-    width: 95%;
-    /* margin: 100px auto; */
-    margin: 5vh auto;
-
-    font-size: 1.3rem;
-    font-weight: bold;
-    color: #222;
-    border-top: 2px dotted #55d6aa;
-    border-bottom: 2px dotted #55d6aa;
-    letter-spacing: 1px;
-}
-.highlights h2 {
-    text-transform: uppercase;
-}
-.highlights h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-}
-
 
 /* --- Section 3 : .more-info --- */
 
@@ -439,17 +424,47 @@ section.card-flex a {
     }
 }
 
-/* --- Under COnstrustion --- */
 
-.under-const {
+
+/* --- Section 3 : .highlights --- */
+
+.highlights {
     text-align: center;
-    padding-bottom: 15vh;
-    padding-top: 5vh;
+    width: 95%;
+    /* margin: 100px auto; */
+    margin: 5vh auto;
 
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #222;
+    border-top: 2px dotted #55d6aa;
+    border-bottom: 2px dotted #55d6aa;
+    letter-spacing: 1px;
 }
-.under-const img{
-    max-width: 80vw;
-    height: 130px;
+
+.highlights h2 {
+    text-transform: uppercase;
+    position: relative;
+}
+.highlights h2::after {
+    content: '\*';
+    position: absolute;
+    top: -2px;
+    font-size: 13px;
+    padding-left: 2px;
+}
+
+.highlights h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+
+/* --- Starred Important --- */
+
+.star-important {
+    padding: 5vh 1em 15vh 1em;
+    font-size: 13px;
 }
 
 
@@ -498,6 +513,7 @@ div.footer-2 span {
 }
 
 /* =================================== */
+
 
 /* ====== SCROLLBAR ====== */
 
