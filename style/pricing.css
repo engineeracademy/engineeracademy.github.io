@@ -60,6 +60,6 @@ main#pricing {
 @media only screen and (max-width: 500px) {
     .pricing-table {
         grid-template-columns: repeat(1, 2fr);
-        margin: 5vh 2vw
+        margin: 5vh 2vw 20vh 2vw;
     }
 }
