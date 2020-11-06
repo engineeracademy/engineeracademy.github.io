@@ -42,6 +42,19 @@ section.contact-number {
     }
 } */
 
+
+/* --- Under COnstrustion --- */
+
+.under-const {
+    text-align: center;
+    padding: 5vh 0 15vh 0;
+}
+.under-const img{
+    max-width: 80vw;
+    height: 130px;
+}
+
+/* --- FOOTER --- */
 footer div span {
     padding: 0 1em;
 }
