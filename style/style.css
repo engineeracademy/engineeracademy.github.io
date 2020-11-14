@@ -222,6 +222,7 @@ main {
     max-width: 100%;
     color: #444;
     min-height: 100vh;
+    margin-bottom: 5vh;
 }
 
 main#index > h1 {
@@ -440,6 +441,7 @@ section.card-flex a {
     border-top: 2px dotted #55d6aa;
     border-bottom: 2px dotted #55d6aa;
     letter-spacing: 1px;
+    
 }
 
 .highlights h2 {
@@ -447,11 +449,12 @@ section.card-flex a {
     position: relative;
 }
 .highlights h2::after {
-    content: '\*';
-    position: absolute;
-    top: -2px;
+    content: '*';
+    position: relative;
+    top: -15px;
     font-size: 13px;
     padding-left: 2px;
+    margin-bottom: 15px;
 }
 
 .highlights h3 {
