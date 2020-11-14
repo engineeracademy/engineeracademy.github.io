@@ -2,7 +2,7 @@ main#about {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     text-align: center;
-    margin: 0 1vw;
+    margin: 0 1vw 20vh 1vw;
 }
 
 section.aboutS h2 {
@@ -19,6 +19,9 @@ section.aboutS b {
     word-spacing: 3px;
 }
 @media only screen and (max-width: 550px) {
+    main#about {
+        margin-bottom: 25vh;
+    }
     section.aboutS > p {
         word-spacing: 2px;
         letter-spacing: .5px;
